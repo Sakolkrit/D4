@@ -1,0 +1,26 @@
+\appendix{Second appendix title}
+\noindent{\large\bf Put appropriate topic here} \\
+
+Next, we show how $\mathrm{Var}\{X_n\}$ can be determined.  Let
+$C_{\lambda}(l)$ be the autocovariance function of $\lambda_n$.  The
+MVA technique basically approximates the input process $\lambda_n$
+with a Gaussian process, which allows $\mathrm{Var}\{X_n\}$ to be
+represented by the autocovariance function.  In particular, the
+variance of $X_n$ can be expressed in terms of $C_{\lambda}(l)$ as
+\begin{equation}
+  \mathrm{Var}\{X_n\} = nC_{\lambda}(0) + 2\sum_{l=1}^{n-1} (n-l)C_{\lambda}(l)
+\end{equation} 
+
+\noindent{\large\bf Add more topic as you need} \\
+
+Therefore, $C_{\lambda}(l)$ must be known in the MVA technique, either
+by assuming specific traffic models or by off-line analysis in case of
+traces.  In most practical situations, $C_{\lambda}(l)$ will not be
+known in advance, and an on-line measurement algorithm developed
+in~\cite{eun01} is required to jointly determine both $n^\ast$ and
+$m_x$. For fGn traffic, $\mathrm{Var}\{X_n\}$ is equal to $\sigma^2
+n^{2H}$, where $\sigma^2 = \mathrm{Var}\{\lambda_n\}$, and we can find
+the $n^\ast$ that minimizes (\ref{eq:mx}) directly. Although $\lambda$
+can be easily measured, it is not the case for $\sigma^2$ and $H$.
+Consequently, the MVA technique suffers from the need of prior
+knowledge traffic parameters. 
