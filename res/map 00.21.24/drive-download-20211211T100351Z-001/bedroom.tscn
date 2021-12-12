@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://map/bed_room.tres" type="TileSet" id=1]
+
+[node name="bedroom" type="Node2D"]
+position = Vector2( 350, 300 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="bedroom" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( -786432, 536870914, 0, -786426, 536870914, 0, -786425, 536870914, 0, -786419, 536870914, 0, -786418, 536870914, 0, -786412, 536870914, 0, -786408, 536870914, 0, -393216, 536870913, 0, -393210, 536870913, 0, -393204, 536870913, 0, -393198, 536870913, 0, -393192, 536870913, 0, 0, 536870912, 0, 6, 536870912, 0, 12, 536870912, 0, 18, 536870912, 0, 24, 536870912, 0, 327680, 536870912, 0, 327686, 536870912, 0, 327692, 536870912, 0, 327698, 536870912, 0, 327704, 536870912, 0, 655360, 536870912, 0, 655366, 536870912, 0, 655372, 536870912, 0, 655378, 536870912, 0, 655384, 536870912, 0 )
+
+[node name="bed" type="TileMap" parent="bedroom"]
+position = Vector2( 1248, -476 )
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 327666, 536870916, 0 )
+
+[node name="book_shelf" type="TileMap" parent="bedroom"]
+position = Vector2( 86, -53 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -2490302, 536870923, 0, -2490277, 536870923, 0 )
+
+[node name="table" type="TileMap" parent="bedroom"]
+position = Vector2( 21, -71 )
+scale = Vector2( 0.75, 0.75 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -589824, 536870915, 0 )
+
+[node name="lamp" type="TileMap" parent="bedroom"]
+position = Vector2( 11, -68 )
+scale = Vector2( 0.8, 0.8 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -1245178, 536870924, 0 )
+
+[node name="door" type="TileMap" parent="bedroom"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 3080288, 1610612736, 0 )
